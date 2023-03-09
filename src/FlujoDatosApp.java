@@ -11,6 +11,10 @@ public class FlujoDatosApp {
 		ej1.mayorValor(2, 2);
 		
 		
+		Metodos ej2 = new Metodos();
+		ej2.saludoUsuario();
+		
+		
 		
 		
 		
