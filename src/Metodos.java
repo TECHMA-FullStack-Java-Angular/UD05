@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 
 public class Metodos {
@@ -34,6 +35,16 @@ public class Metodos {
 		sc.close();
 		
 		System.out.println("Hola "+ name + "! Es un placer tenerte por aqui.");
+	}
+	
+	/*Modifica la aplicación anterior para que nos pida el nombre que queremos introducir 
+	 * (recuerda usar JOptionPane)*/
+	
+	public void saludoInteractivo() {
+		
+		String nombre = JOptionPane.showInputDialog("Introduce tu nombre");
+		JOptionPane.showMessageDialog(null, "Bienvenido a la app Flujo de datos, " + nombre +"! Es un placer tenerte por aqui." );
+		
 	}
 	
 	
