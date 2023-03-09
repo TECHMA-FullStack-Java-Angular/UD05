@@ -23,7 +23,10 @@ public class FlujoDatosApp {
 //		ej3.saludoInteractivo();
 		
 		Metodos ej4 = new Metodos();
-		ej4.areaCirculo();
+//		ej4.areaCirculo();
+		
+		Metodos ej5 = new Metodos();
+		ej5.comprobarPar();
 		
 		
 		
