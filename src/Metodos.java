@@ -8,6 +8,7 @@ public class Metodos {
 	 * Declara 2 variables numéricas (con el valor que desees), e indica cual es
 	 * mayor de las dos. Si son iguales, indicarlo tambien. Ves cambiando los
 	 * valores para comprobar que funciona.
+	 * He puesto los valores al llamar el metodo en main, así resulta más comodo hacer las pruebas
 	 */
 
 	public void mayorValor(int num1, int num2) {
