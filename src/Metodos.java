@@ -1,6 +1,9 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
-import java.math.*;
+import java.text.Normalizer;
+
+
+
 
 public class Metodos {
 
@@ -179,7 +182,7 @@ public class Metodos {
 		if (totalVentas != 0) {
 
 			for (int i = 1; i <= totalVentas; i++) {
-				System.out.println("Introduce el numero de ventas realizada en la venta "+i+": ");
+				System.out.println("Introduce el numero de ventas realizada en la venta " + i + ": ");
 				numVentas += Integer.parseInt(sc.nextLine());
 
 			}
@@ -192,7 +195,61 @@ public class Metodos {
 		} else {
 			System.out.println("Has introducido un valor erroneo.");
 		}
+		sc.close();
 
 	}
+
+	/*
+	 * Crea una aplicación que nos pida un día de la semana y que nos diga si es un
+	 * día laboral o no. Usa un switch para ello.
+	 */
+
+	public void diaSemana() {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Bienvenido al verificador de días laborables.");
+		System.out.println("Introduce el día de la semana que deseas verificar: ");
+
+		String diaIndicado = sc.nextLine().toLowerCase();
+		diaIndicado= Normalizer.normalize(diaIndicado, Normalizer.Form.NFD)
+                .replaceAll("[^\\p{ASCII}]", "");
+		
+
+		switch (diaIndicado) {
+
+		case "lunes":
+			System.out.println("El día indicado es laborable");
+			break;
+		case "martes":
+			System.out.println("El día indicado es laborable");
+			break;
+		case "miercoles":
+			System.out.println("El día indicado es laborable");
+			break;
+		case "jueves":
+			System.out.println("El día indicado es laborable");
+			break;
+		case "viernes":
+			System.out.println("El día indicado es laborable");
+			break;
+		case "sabado":
+			System.out.println("El día indicado NO es laborable");
+			break;
+		case "domingo":
+			System.out.println("El día indicado es laborable");
+			break;
+			default:
+				System.out.println("El día indicado no és valido.");
+				break;
+
+		}
+
+		sc.close();
+		
+	     
+	}
+	
+	
 
 }
