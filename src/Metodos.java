@@ -90,7 +90,6 @@ public class Metodos {
 
 		if (num % 2 == 0) {
 			System.out.println("El numero indicado es divisible entre 2.");
-			
 
 		} else {
 			System.out.println("El numero indicado NO es divisible entre 2.");
@@ -98,46 +97,63 @@ public class Metodos {
 		}
 		sc.close();
 	}
-	
-	/* Lee un numero por teclado que pida el precio de un producto (puede tener decimales) 
-	 * y calcule el precio final con IVA. El IVA sera una constante que sera del 21%*/
-	
+
+	/*
+	 * Lee un numero por teclado que pida el precio de un producto (puede tener
+	 * decimales) y calcule el precio final con IVA. El IVA sera una constante que
+	 * sera del 21%
+	 */
+
 	public void precioFinal() {
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Bienvenido al coalculador de precio final!");
 		System.out.println("Introduce el precio del producto sin IVA: ");
-		
+
 		double precio = Double.parseDouble(sc.nextLine());
-		
-		final double  IVA= 0.21;
-		
-		double precioFinal= precio+(precio*IVA);
-		
-		System.out.println("El precio final del producto sera "+ precioFinal);
-		
+
+		final double IVA = 0.21;
+
+		double precioFinal = precio + (precio * IVA);
+
+		System.out.println("El precio final del producto sera " + precioFinal);
+
 		sc.close();
 	}
-	
-	/* Muestra los números del 1 al 100 (ambos incluidos). Usa un blucle while.*/
-	
+
+	/* Muestra los números del 1 al 100 (ambos incluidos). Usa un blucle while. */
+
 	public void mostrarNum() {
-		
-		int num=1;
-		
-		while(num>=1 && num<=100) {
+
+		int num = 1;
+
+		while (num >= 1 && num <= 100) {
 			System.out.println(num);
 			num++;
 		}
 	}
-	
-	/*Haz el mismo ejercicio anterior con un bucle for.*/
-	
+
+	/* Haz el mismo ejercicio anterior con un bucle for. */
+
 	public void mostrarNum2() {
-		
-		for(int i = 1; i<=100; i++) {
+
+		for (int i = 1; i <= 100; i++) {
 			System.out.println(i);
+		}
+	}
+
+	/*
+	 * Muestra los numeros del 1 al 100 (ambos incluidos) divisibles entre 2 y 3.
+	 * Utiliza el bucle que desees.
+	 */
+
+	public void mostrarNum3() {
+
+		for (int i = 1; i <= 100; i++) {
+			if ((i % 2 == 0) && (i % 3 == 0)) {
+				System.out.println(i);
+			}
 		}
 	}
 

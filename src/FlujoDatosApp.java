@@ -35,7 +35,10 @@ public class FlujoDatosApp {
 //		ej7.mostrarNum();
 		
 		Metodos ej8 = new Metodos();
-		ej8.mostrarNum2();
+//		ej8.mostrarNum2();
+		
+		Metodos ej9 = new Metodos();
+		ej9.mostrarNum3();
 		
 		
 		
