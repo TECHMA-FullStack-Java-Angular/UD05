@@ -288,7 +288,7 @@ public class Metodos {
 		int num1 = 0;
 		int num2 = 0;
 
-		JOptionPane.showMessageDialog(null, "Bienvenido a la aplicación Calculadora Inversa!", null, num2);
+		JOptionPane.showMessageDialog(null, "Bienvenido a la aplicación Calculadora Inversa!");
 
 		for (int i = 1; i <= 2; i++) {
 
