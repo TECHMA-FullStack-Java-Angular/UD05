@@ -116,7 +116,29 @@ public class Metodos {
 		double precioFinal= precio+(precio*IVA);
 		
 		System.out.println("El precio final del producto sera "+ precioFinal);
+		
 		sc.close();
+	}
+	
+	/* Muestra los números del 1 al 100 (ambos incluidos). Usa un blucle while.*/
+	
+	public void mostrarNum() {
+		
+		int num=1;
+		
+		while(num>=1 && num<=100) {
+			System.out.println(num);
+			num++;
+		}
+	}
+	
+	/*Haz el mismo ejercicio anterior con un bucle for.*/
+	
+	public void mostrarNum2() {
+		
+		for(int i = 1; i<=100; i++) {
+			System.out.println(i);
+		}
 	}
 
 }

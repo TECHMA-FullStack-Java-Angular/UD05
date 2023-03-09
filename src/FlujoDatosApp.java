@@ -29,7 +29,13 @@ public class FlujoDatosApp {
 //		ej5.comprobarPar();
 		
 		Metodos ej6 = new Metodos();
-		ej6.precioFinal();
+//		ej6.precioFinal();
+		
+		Metodos ej7 = new Metodos();
+//		ej7.mostrarNum();
+		
+		Metodos ej8 = new Metodos();
+		ej8.mostrarNum2();
 		
 		
 		
