@@ -242,14 +242,44 @@ public class Metodos {
 			default:
 				System.out.println("El día indicado no és valido.");
 				break;
-
 		}
-
-		sc.close();
-		
-	     
+		sc.close();  
 	}
 	
+	/* Escribe una aplicación con un String que contenga una contraseña cualquiera. 
+	 * Después se te pedirá que introduzcas la contraseña, con 3 intentos. Cuando aciertes
+	 *  ya no pedirá mas la contraseña y mostrará un mensaje diciendo "Enhorabuena". Piensa 
+	 *  bien en la condición de salida (3 intentos y si acienrta sale, aunque le queden 
+	 *  intentos).*/
+	
+	
+	public void adivinaPass() {
+		
+		String pass = "HolaMundo";
+		
+		Scanner sc = new Scanner(System.in);
+		
+			System.out.println("Bienvenido al programa adivina la contraseña!");
+			
+			
+		for(int i=0;i<3;i++) {
+			System.out.println("Tienes "+ (3-i)+ " intentos!");
+			System.out.println("Introduce la contraseña que crees que es la correcta: ");
+			
+			String intento = sc.nextLine();
+			
+			if(intento.equals(pass)) {
+				System.out.println("Enhorabuena, la contraseña es correcta!");
+				break;
+			}else {
+				System.out.println("No has tenido suerte, la contraseña es incorrecta.");
+			}
+			
+		}
+		System.out.println("El juego ha terminado. Gracias por jugar con nosotros.");			
+		sc.close(); 
+		
+	}
 	
 
 }

@@ -44,7 +44,10 @@ public class FlujoDatosApp {
 //		ej10.calculoVentas();
 		
 		Metodos ej11 = new Metodos();
-		ej11.diaSemana();
+//		ej11.diaSemana();
+		
+		Metodos ej12 = new Metodos();
+		ej12.adivinaPass();
 		
 		
 		
