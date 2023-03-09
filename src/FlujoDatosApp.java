@@ -6,8 +6,8 @@ public class FlujoDatosApp {
 	public static void main(String args[]) {
 		
 		
-		/*Para mejor experiencia, eliminar el comentario de cada metodo a probar y después 
-		 * volver a comentarlo.*/
+		/*Para mejor experiencia, eliminar solo el comentario del metodo que deseas probar 
+		 * y después volver a comentarlo.*/
 		
 		Metodos ej1 = new Metodos();
 //		ej1.mayorValor(3, 4);
@@ -18,10 +18,12 @@ public class FlujoDatosApp {
 		Metodos ej2 = new Metodos();
 //		ej2.saludoUsuario();
 		
-		//Comentar metodo anterior antes de probar el ej3.
 		
 		Metodos ej3 = new Metodos();
-		ej3.saludoInteractivo();
+//		ej3.saludoInteractivo();
+		
+		Metodos ej4 = new Metodos();
+		ej4.areaCirculo();
 		
 		
 		

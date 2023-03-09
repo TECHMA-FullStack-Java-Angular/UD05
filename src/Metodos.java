@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
+import java.math.*;
 
 
 public class Metodos {
@@ -45,6 +46,28 @@ public class Metodos {
 		String nombre = JOptionPane.showInputDialog("Introduce tu nombre");
 		JOptionPane.showMessageDialog(null, "Bienvenido a la app Flujo de datos, " + nombre +"! Es un placer tenerte por aqui." );
 		
+	}
+	
+	/* Haz una aplicación que calcule el área de un circulo(pi*R2). El radio se pedira por
+	 *  teclado (recuerda pasar de String a double con Double.parseDouble). Usa la constante 
+	 *  PI y el método pow de Math.*/
+	
+	public void areaCirculo() {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Bienvenido al calculador de area de circulo! ");
+		System.out.println("Introduce el radio del circulo: ");
+		
+		
+		double num1 = Double.parseDouble(sc.nextLine());
+		
+		
+		double area = Math.PI*(Math.pow(num1, 2));
+		
+		
+		System.out.println("El area de un circulo con radio de "+ num1+ ", es "+area);
+		sc.close();
 	}
 	
 	
