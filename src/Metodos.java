@@ -36,7 +36,7 @@ public class Metodos {
 //
 //		String name = sc.nextLine();
 //		sc.close();
-		
+
 		String name = "Paula";
 
 		System.out.println("Hola " + name + "! Es un placer tenerte por aqui.");
@@ -158,10 +158,41 @@ public class Metodos {
 			}
 		}
 	}
-	
-	/* Realiza una aplicación que nos pida un número de ventas a introducir, después 
-	 * nos pedirá tantas ventas por teclado como número de ventas se hayan indicado. 
-	 * Al final mostrara la suma de todas las ventas. Piensa que es lo que se repite 
-	 * y lo que no.*/
+
+	/*
+	 * Realiza una aplicación que nos pida un número de ventas a introducir, después
+	 * nos pedirá tantas ventas por teclado como número de ventas se hayan indicado.
+	 * Al final mostrara la suma de todas las ventas. Piensa que es lo que se repite
+	 * y lo que no.
+	 */
+
+	public void calculoVentas() {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Bienvenido al calculador de ventas!");
+		System.out.println("Introduce el numero de ventas totales a introducir: ");
+
+		int totalVentas = Integer.parseInt(sc.nextLine());
+		int numVentas = 0;
+
+		if (totalVentas != 0) {
+
+			for (int i = 1; i <= totalVentas; i++) {
+				System.out.println("Introduce el numero de ventas realizada en la venta "+i+": ");
+				numVentas += Integer.parseInt(sc.nextLine());
+
+			}
+
+			System.out.println("El total de ventas es de " + numVentas);
+
+		} else if (totalVentas == 0) {
+			System.out.println("No has introducido ninguna venta");
+
+		} else {
+			System.out.println("Has introducido un valor erroneo.");
+		}
+
+	}
 
 }
