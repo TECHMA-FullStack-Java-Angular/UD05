@@ -26,7 +26,10 @@ public class FlujoDatosApp {
 //		ej4.areaCirculo();
 		
 		Metodos ej5 = new Metodos();
-		ej5.comprobarPar();
+//		ej5.comprobarPar();
+		
+		Metodos ej6 = new Metodos();
+		ej6.precioFinal();
 		
 		
 		

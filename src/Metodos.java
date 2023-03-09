@@ -90,11 +90,33 @@ public class Metodos {
 
 		if (num % 2 == 0) {
 			System.out.println("El numero indicado es divisible entre 2.");
+			
 
 		} else {
 			System.out.println("El numero indicado NO es divisible entre 2.");
 
 		}
+		sc.close();
+	}
+	
+	/* Lee un numero por teclado que pida el precio de un producto (puede tener decimales) 
+	 * y calcule el precio final con IVA. El IVA sera una constante que sera del 21%*/
+	
+	public void precioFinal() {
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Bienvenido al coalculador de precio final!");
+		System.out.println("Introduce el precio del producto sin IVA: ");
+		
+		double precio = Double.parseDouble(sc.nextLine());
+		
+		final double  IVA= 0.21;
+		
+		double precioFinal= precio+(precio*IVA);
+		
+		System.out.println("El precio final del producto sera "+ precioFinal);
+		sc.close();
 	}
 
 }
