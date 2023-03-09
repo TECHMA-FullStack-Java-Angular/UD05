@@ -29,13 +29,15 @@ public class Metodos {
 
 	public void saludoUsuario() {
 
-		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Bienvenido a la app Flujo de datos");
-		System.out.println("Introduce tu nombre: ");
-
-		String name = sc.nextLine();
-		sc.close();
+//		Scanner sc = new Scanner(System.in);
+//
+//		System.out.println("Bienvenido a la app Flujo de datos");
+//		System.out.println("Introduce tu nombre: ");
+//
+//		String name = sc.nextLine();
+//		sc.close();
+		
+		String name = "Paula";
 
 		System.out.println("Hola " + name + "! Es un placer tenerte por aqui.");
 	}
@@ -156,5 +158,10 @@ public class Metodos {
 			}
 		}
 	}
+	
+	/* Realiza una aplicación que nos pida un número de ventas a introducir, después 
+	 * nos pedirá tantas ventas por teclado como número de ventas se hayan indicado. 
+	 * Al final mostrara la suma de todas las ventas. Piensa que es lo que se repite 
+	 * y lo que no.*/
 
 }

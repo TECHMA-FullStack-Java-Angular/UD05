@@ -16,7 +16,7 @@ public class FlujoDatosApp {
 		
 		
 		Metodos ej2 = new Metodos();
-//		ej2.saludoUsuario();
+		ej2.saludoUsuario();
 		
 		
 		Metodos ej3 = new Metodos();
@@ -38,7 +38,7 @@ public class FlujoDatosApp {
 //		ej8.mostrarNum2();
 		
 		Metodos ej9 = new Metodos();
-		ej9.mostrarNum3();
+//		ej9.mostrarNum3();
 		
 		
 		
